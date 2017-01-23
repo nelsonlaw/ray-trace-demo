@@ -1,0 +1,590 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ray.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ray.ico"
+IDR_RAYTYPE             ICON                    "res\\rayDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_ICON256             BITMAP                  "res\\Ray.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_NAVIGATE
+    BUTTON      ID_SELECT
+    BUTTON      ID_ZOOM
+    SEPARATOR
+    BUTTON      ID_CUBE
+    BUTTON      ID_TETRAHEDRON
+    BUTTON      ID_OCTAHEDRON
+    BUTTON      ID_ICOSAHEDRON
+    BUTTON      ID_DODECAHEDRON
+    SEPARATOR
+    BUTTON      ID_PRYAMID
+    SEPARATOR
+    BUTTON      ID_ELLIPSOID
+    BUTTON      ID_CYLINDER
+    BUTTON      ID_CONE
+    SEPARATOR
+    BUTTON      ID_LIGHT
+    BUTTON      ID_LIGHT_COLOR
+    SEPARATOR
+    BUTTON      ID_MISCMAT
+    BUTTON      ID_IMPORT_TX
+    BUTTON      ID_REMOVETX
+    SEPARATOR
+    BUTTON      ID_RENDER_WINDOW
+    BUTTON      ID_RENDER
+    BUTTON      ID_RENDERFILE
+    BUTTON      ID_RERENDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Ex&port Rendered Image...",   ID_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "D&uplicate\tDel",             ID_DUPLICATE
+        MENUITEM "&Delete\tCtrl+D",             ID_DELETE
+        MENUITEM "Select &All\tCtrl+A",         ID_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Material Settings\tCtrl+M",  ID_MISCMAT
+        POPUP "Pre-defined Materials"
+        BEGIN
+            MENUITEM "Golden",                      ID_PM_GOLDEN
+            MENUITEM "Mirror",                      ID_PM_MIRROR
+            MENUITEM "Glass",                       ID_PM_GLASS
+            MENUITEM "Dull Red",                    ID_PM_DULLRED
+            MENUITEM "Shiny Green",                 ID_PM_SHINYGREEN
+            MENUITEM "Translucent Blue",            ID_PM_TRANSBLUE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Remo&ve Transform Except Translation", ID_REMOVETRANS
+        MENUITEM SEPARATOR
+        MENUITEM "&Light Source Color",         ID_LIGHT_COLOR
+        MENUITEM "Toggle Li&ght",               ID_LIGHT_SWITCH
+        MENUITEM SEPARATOR
+        MENUITEM "Set &Texture...\tCtrl+T",     ID_IMPORT_TX
+        MENUITEM "Remove Texture Map",          ID_REMOVETX
+        MENUITEM SEPARATOR
+        MENUITEM "P&references...\tCtrl+P",     ID_PREFERENCES
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tool"
+    BEGIN
+        MENUITEM "Na&vigate Mode",              ID_NAVIGATE
+        MENUITEM "&Select Mode",                ID_SELECT
+        MENUITEM "Zoom Mode",                   ID_ZOOM
+        MENUITEM SEPARATOR
+        MENUITEM "C&ube",                       ID_CUBE
+        MENUITEM "&Tetrahedron",                ID_TETRAHEDRON
+        MENUITEM "&Octahedron",                 ID_OCTAHEDRON
+        MENUITEM "&Icosahedron",                ID_ICOSAHEDRON
+        MENUITEM "&Dodecahedron",               ID_DODECAHEDRON
+        MENUITEM SEPARATOR
+        MENUITEM "&Ellipsoid",                  ID_ELLIPSOID
+        MENUITEM "&Cylinder",                   ID_CYLINDER
+        MENUITEM "Co&ne",                       ID_CONE
+        MENUITEM SEPARATOR
+        MENUITEM "&Pyramid",                    ID_PRYAMID
+        MENUITEM SEPARATOR
+        MENUITEM "&Light Source",               ID_LIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "Render Full &Window\tShift+Ctrl+R", ID_RENDER
+        MENUITEM "&Render Region\tCtrl+R",      ID_RENDER_WINDOW
+        MENUITEM "Render to &File\tCtrl+F",     ID_RENDERFILE
+        MENUITEM "Render Again",                ID_RERENDER
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "A",            ID_SELECTALL,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_DUPLICATE,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_RENDERFILE,          VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_MISCMAT,             VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_PREFERENCES,         VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_RENDER_WINDOW,       VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_RENDER,              VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_IMPORT_TX,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_DELETE,              VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 263, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ray"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Ray   v3.1    Assignment Template",IDC_STATIC,43,7,119,8,SS_NOPREFIX
+    LTEXT           "Last update: Nov 2006     Copyright (C) 1999-2006",IDC_STATIC,7,87,202,8
+    DEFPUSHBUTTON   "OK",IDOK,206,7,50,14,WS_GROUP
+    LTEXT           "C0271 Computer Graphics",IDC_STATIC,43,17,116,8
+    LTEXT           "http://www.cs.hku.hk/~c0271",IDC_STATIC,43,27,130,8
+    LTEXT           "Department of Computer Science and Information Systems",IDC_STATIC,7,63,191,8
+    LTEXT           "The University of Hong Kong",IDC_STATIC,7,72,206,8
+    LTEXT           "HKUCS Computer Graphics Group",IDC_STATIC,7,45,199,8
+    LTEXT           "http://www.cs.hku.hk/GraphicsGroup/",IDC_STATIC,7,54,206,8
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP,7,7,30,28
+    LTEXT           "Acknowledgement: Image import/export routine by IJG Group",IDC_STATIC,7,102,202,8
+END
+
+IDR_MAINFRAME DIALOG  0, 0, 330, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: layout dialog bar ",IDC_STATIC,12,4,300,8
+END
+
+IDD_MATERIAL DIALOGEX 0, 0, 184, 290
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Material Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,269,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,269,50,14
+    PUSHBUTTON      "Ambient",IDC_AMBIENT,7,169,51,14
+    PUSHBUTTON      "Diffuse",IDC_DIFFUSE,66,169,51,14
+    PUSHBUTTON      "Specular",IDC_SPECULAR,125,169,51,14
+    CONTROL         "Slider2",IDC_SHININESS,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,57,193,106,18
+    LTEXT           "Shininess",IDC_STATIC,7,199,32,9
+    LTEXT           "Opacity",IDC_STATIC,7,215,29,9
+    LTEXT           "Refractive Index",IDC_STATIC,7,230,36,17
+    CONTROL         "Slider2",IDC_OPACITY,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,57,211,106,18
+    CONTROL         "Slider2",IDC_REFRACTIDX,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,57,229,106,18
+    LTEXT           "128",IDC_STATIC,163,199,14,9
+    LTEXT           "1",IDC_STATIC,51,199,8,9
+    LTEXT           "1",IDC_STATIC,169,216,8,9
+    LTEXT           "0",IDC_STATIC,51,216,8,9
+    LTEXT           "1",IDC_STATIC,51,233,8,9
+    LTEXT           "5",IDC_STATIC,169,233,8,9
+    LTEXT           "Reflectance",IDC_STATIC,7,251,39,9
+    CONTROL         "Slider2",IDC_REFLECTANCE,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,57,247,106,18
+    LTEXT           "1",IDC_STATIC,169,250,8,9
+    LTEXT           "0",IDC_STATIC,51,251,8,9
+END
+
+IDD_PREFERENCES DIALOG  0, 0, 211, 196
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,154,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,24,50,14
+    CONTROL         "Show ray trace summary",IDC_SHOWSUMMARY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,101,10
+    CONTROL         "Show texture map in preview",IDC_SHOWTX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,22,109,10
+    LTEXT           "Ray trace level",IDC_STATIC,7,56,60,10
+    CONTROL         "Slider1",IDC_RTLEVEL,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,27,64,152,21
+    LTEXT           "0",IDC_STATIC,16,71,8,13
+    LTEXT           "20",IDC_STATIC,179,72,14,13
+    LTEXT           "JPG export quality",IDC_STATIC,7,88,60,10
+    CONTROL         "Slider1",IDC_JPGQUALITY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,27,97,152,21
+    LTEXT           "100",IDC_STATIC,179,105,14,13
+    LTEXT           "1",IDC_STATIC,16,105,8,13
+    LTEXT           "Zoom Factor",IDC_STATIC,7,123,75,10
+    CONTROL         "Slider1",IDC_ZOOMFACT,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,27,131,152,21
+    LTEXT           "10 X",IDC_STATIC,179,140,18,13
+    LTEXT           "2 X",IDC_STATIC,16,140,14,13
+    LTEXT           "View Angle (Vertical)",IDC_STATIC,7,156,75,10
+    CONTROL         "Slider1",IDC_VIEWANGLE,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,27,165,152,21
+    LTEXT           "10",IDC_STATIC,16,173,14,13
+    LTEXT           "120",IDC_STATIC,179,173,25,13
+    CONTROL         "Alpha blending",IDC_BLENDING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,38,109,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,0,1
+ PRODUCTVERSION 1,6,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Dept. of Computer Science and Information Systems, HKU"
+            VALUE "FileDescription", "Ray Tracing"
+            VALUE "FileVersion", "1, 6, 0, 1"
+            VALUE "InternalName", "ray"
+            VALUE "LegalCopyright", "Copyright (C) 2001"
+            VALUE "OriginalFilename", "ray.exe"
+            VALUE "ProductName", "ray Application"
+            VALUE "ProductVersion", "1, 6, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_MATERIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        VERTGUIDE, 16
+        VERTGUIDE, 37
+        VERTGUIDE, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Ray\n\nRay\nRay Trace Scene File (*.ray)\n.ray\nRay.Document\nRay Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ray"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DIFFUSE              "Diffuse Color\nDiffuse Color"
+    ID_SPECULAR             "Specular Color\nSpecular Color"
+    ID_AMBIENT              "Ambient Color\nAmbient Color"
+    ID_MISCMAT              "Material settings\nMaterial settings"
+    ID_REMOVETRANS          "Remove Transform\nRemove Transform Except Translation"
+    ID_LIGHT_COLOR          "Light source color\nLight source color"
+    ID_LIGHT_SWITCH         "Toggle light\nToggle light"
+    ID_IMPORT_TX            "Set &Texture\nSet &Texture"
+    ID_DUPLICATE            "Duplicate\nDuplicate"
+    ID_DELETE               "Delete\nDelete"
+    ID_SELECTALL            "Select All\nSelect All"
+    ID_PREFERENCES          "Preferences\nPreferences"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PM_GOLDEN            "Golden\nGolden"
+    ID_PM_MIRROR            "Mirror\nMirror"
+    ID_PM_GLASS             "Glass\nGlass"
+    ID_PM_DULLRED           "Dull Red\nDull Red"
+    ID_PM_SHINYGREEN        "Shiny Green\nShiny Green"
+    ID_PM_TRANSBLUE         "Translucent Blue\nTranslucent Blue"
+    ID_ROTATEX              "90 Deg. about X-axis\n90 Deg. about X-axis"
+    ID_ROTATEY              "90 Deg. about Y-axis\n90 Deg. about Y-axis"
+    ID_ROTATEZ              "90 Deg. about Z-axis\n90 Deg. about Z-axis"
+    ID_NAVIGATE             "Navigate Mode\nNavigate Mode"
+    ID_SELECT               "Select Mode\nSelect Mode"
+    ID_CUBE                 "Cube\nCube"
+    ID_ELLIPSE              "Ellipsoid\nEllipsoid"
+    ID_CYLINDER             "Cylinder\nCylinder"
+    ID_CONE                 "Cone\nCone"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PRYAMID              "Pyramid\nPyramid"
+    ID_LIGHT                "Add light source\nAdd light source"
+    ID_TETRAHEDRON          "Tetrahedron\nTetrahedron"
+    ID_OCTAHEDRON           "Octahedron\nOctahedron"
+    ID_ICOSAHEDRON          "Icosahedron\nIcosahedron"
+    ID_DODECAHEDRON         "Dodecahedron\nDodecahedron"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RENDER_WINDOW        "Render Region\nRender Region"
+    ID_RENDER               "Render Full Window\nRender Full Window"
+    ID_ELLIPSOID            "Ellipsoid\nEllipsoid"
+    ID_EXPORT               "Export Rendered Image\nExport Rendered Image"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RENDERFILE           "Render to File/Export\nRender to File/Export"
+    ID_RERENDER             "Render Again\nRender Again"
+    ID_ZOOM                 "Zoom Mode\nZoom Mode"
+    ID_REMOVETX             "Remove Texture Map\nRemove Texture Map"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ray.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
